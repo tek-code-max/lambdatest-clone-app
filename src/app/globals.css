@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .navbar-transparent {
+    background-color: transparent;
+  }
+
+  .navbar-scrolled {
+    @apply bg-white shadow-md;
+  }
+
+  .nav-item-border {
+    @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full scale-x-0;
+  }
+
+  .nav-item-hover {
+    @apply scale-x-100 transform transition-transform duration-300 ease-in-out origin-center;
+  }
+}
